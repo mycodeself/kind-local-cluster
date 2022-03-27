@@ -1,0 +1,31 @@
+excludedApps: # list of apps that should not be installed when using install all
+  - hello-world
+  - nginx-app
+
+apps:
+  prometheus:
+    method: helm
+    namespace: prometheus
+    extraArgs: --create-namespace
+  grafana:
+    method: helm
+    namespace: grafana
+    extraArgs: --create-namespace
+  elastic:
+    method: helm
+    namespace: elastic
+    extraArgs: --create-namespace
+  trivy:
+    method: helm
+    namespace: trivy
+    extraArgs: --create-namespace
+  starboard:
+    method: helm
+    namespace: starboard
+    extraArgs: --create-namespace
+  nginx-app:    
+    method: kubectl    
+    namespace: default
+  hello-world:
+    method: kubectl
+    namespace: default

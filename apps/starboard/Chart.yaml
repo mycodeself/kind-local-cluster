@@ -1,0 +1,10 @@
+apiVersion: v2
+name: starboard
+version: 1.0.0
+dependencies:
+  - name: starboard-operator
+    version: "0.9.1"
+    repository: "https://aquasecurity.github.io/helm-charts"
+  - name: starboard-exporter
+    version: "0.3.0"
+    repository: https://giantswarm.github.io/giantswarm-catalog
