@@ -1,8 +1,13 @@
 excludedApps: # list of apps that should not be installed when using install all
   - hello-world
   - nginx-app
+  - elastic
 
 apps:
+  opensearch:
+    method: helm
+    namespace: opensearch
+    extraArgs: --create-namespace
   prometheus:
     method: helm
     namespace: prometheus

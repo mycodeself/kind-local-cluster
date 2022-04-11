@@ -3,7 +3,7 @@ name: starboard
 version: 1.0.0
 dependencies:
   - name: starboard-operator
-    version: "0.9.1"
+    version: "0.10.3"
     repository: "https://aquasecurity.github.io/helm-charts"
   - name: starboard-exporter
     version: "0.3.0"

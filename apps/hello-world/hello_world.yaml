@@ -19,7 +19,13 @@ spec:
         image: arungupta/helloworld-spring-boot:latest
         ports:
         - containerPort: 80
-
+        securityContext:
+          allowPrivilegeEscalation: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65533
+        runAsGroup: 65533
+        fsGroup: 65533
 ---
 apiVersion: v1
 kind: Service

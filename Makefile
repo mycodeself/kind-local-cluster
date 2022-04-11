@@ -1,4 +1,4 @@
-.PHONY: bootstrap destroy install-all upgrade-all install delete upgrade
+.PHONY: bootstrap
 
 bootstrap: 
 	@echo "==> Bootstraping cluster ..."

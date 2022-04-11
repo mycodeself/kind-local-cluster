@@ -1,0 +1,10 @@
+apiVersion: v2
+name: opensearch
+version: 1.0.0
+dependencies:
+  - name: opensearch
+    version: "1.10.0"
+    repository: https://opensearch-project.github.io/helm-charts/
+  - name: opensearch-dashboards
+    version: "1.4.0"
+    repository: https://opensearch-project.github.io/helm-charts/
